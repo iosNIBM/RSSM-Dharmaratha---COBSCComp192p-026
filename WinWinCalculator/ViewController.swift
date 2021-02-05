@@ -32,7 +32,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setupUI()
     }
     
@@ -41,10 +40,8 @@ class ViewController: UIViewController {
         let uiElements = [clearBtn,toogleBtn,percentageBtn,divideBtn,noSevenBtn,noEightBtn,noNineBtn,multiplyBtn,noFourBtn,noFiveBtn,noSixBtn,minusBtn,noOneBtn,noTwoBtn,noThreeBtn,plusBtn,noZeroBtn,dotBtn,equalBtn]
         
         for element in  uiElements{
-            element?.frame.size.height = view.frame.size.height/6
             element?.addLayerEffects(with: .black, borderWidth: 0.5, cornerRadius: 0)
         }
-        
         
     }
     
